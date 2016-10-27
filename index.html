@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta  charset = "UTF-8" >
+	<title>LOGIN</title>
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/freelancer.css">
+	<link rel="stylesheet"  href="css/estilo.css">
+	<script>
+	function acceso(form) {
+if (form.cuenta.value=="Lorena") { 
+if (form.pass.value=="123456") {              
+location="Guardar.html" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+	</script>
+
+</head>
+<body>
+	<div class="login-page">
+  <div class="form">
+    
+    <form class="loginform">
+      <input type="text" name = "cuenta" placeholder="Correo Electronico"/>
+      <input type="password" name="pass" placeholder="Contraseña"/>
+      <input type = "button" onClick="acceso(this.form)" id = "boton" value = "Login">
+      <br>
+      <p class="message">No Estas Registrado? <a href="#">Olvidaste tu contraseña</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
